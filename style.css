@@ -1,0 +1,266 @@
+:root {
+  --header-blue: #0000FF;
+  --ink: #111111;
+  --paper: #f5f1e8;
+  --panel: #fffdf8;
+  --muted: #5f5b52;
+  --line: rgba(17, 17, 17, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at top left, rgba(0, 0, 255, 0.08), transparent 28%),
+    linear-gradient(180deg, #f9f6ef 0%, var(--paper) 100%);
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-header {
+  background: var(--header-blue);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 2rem;
+  padding: 1.25rem 5vw 1.5rem;
+}
+
+.brand-lockup {
+  display: grid;
+  gap: 0.2rem;
+}
+
+.brand {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.brand-note,
+.eyebrow,
+.project-type,
+.card-index {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+}
+
+.brand-note {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.site-nav a {
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid transparent;
+}
+
+.site-nav a.active,
+.site-nav a:hover {
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+main {
+  padding: 4rem 5vw 5rem;
+}
+
+.hero,
+.page-intro,
+.feature-band,
+.contact-panel,
+.about-layout,
+.project-list,
+.section-grid {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+}
+
+.hero h1,
+.page-intro h1,
+.feature-band h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 0.95;
+  margin: 0;
+  max-width: 12ch;
+}
+
+.hero-copy,
+.feature-band p,
+.card p,
+.project-card p,
+.about-copy p,
+.contact-panel p,
+.about-aside li {
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.hero-copy {
+  max-width: 58ch;
+  margin: 1.5rem 0 0;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+  padding: 0 1.3rem;
+  border-radius: 999px;
+  border: 1px solid var(--ink);
+}
+
+.button-primary {
+  background: var(--ink);
+  color: #ffffff;
+}
+
+.button-secondary {
+  background: transparent;
+}
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 4rem;
+}
+
+.card,
+.project-card,
+.feature-band,
+.contact-panel,
+.about-aside {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--line);
+}
+
+.card,
+.project-card {
+  padding: 1.5rem;
+}
+
+.card h2,
+.project-card h2,
+.contact-panel h2,
+.about-aside h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+}
+
+.card-index,
+.project-type,
+.eyebrow {
+  margin: 0 0 0.8rem;
+  color: var(--header-blue);
+  font-weight: 700;
+}
+
+.feature-band {
+  margin-top: 4rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 2rem;
+}
+
+.page-intro {
+  margin-bottom: 2.5rem;
+}
+
+.project-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 2rem;
+}
+
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.5rem;
+}
+
+.about-copy {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-aside {
+  padding: 1.5rem;
+}
+
+.about-aside ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.contact-panel {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .site-header,
+  .feature-band,
+  .project-card,
+  .about-layout,
+  .contact-panel,
+  .section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    align-items: start;
+  }
+
+  .contact-panel,
+  .feature-band {
+    padding: 1.5rem;
+  }
+
+  .hero h1,
+  .page-intro h1,
+  .feature-band h2 {
+    max-width: none;
+  }
+}
