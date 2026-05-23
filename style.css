@@ -405,6 +405,14 @@ h3 {
   margin: 0;
 }
 
+.director-registration {
+  font-family: "Syne", sans-serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
 .about-rail {
   display: grid;
   gap: 1rem;
@@ -428,6 +436,10 @@ h3 {
 .about-gallery-primary,
 .contact-gallery-large {
   grid-row: span 2;
+}
+
+.about-gallery-portrait img {
+  object-position: center top;
 }
 
 .contact-layout {
