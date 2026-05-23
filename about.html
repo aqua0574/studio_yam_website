@@ -4,52 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Studio Yam</title>
-  <meta name="description" content="Learn about Studio Yam's architectural practice, values, and process.">
+  <meta name="description" content="About Studio Yam and the design approach behind its architectural work.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Spectral:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="brand-lockup">
-      <a class="brand" href="index.html">Studio Yam</a>
-      <p class="brand-note">Architecture, interiors, and spatial strategy</p>
-    </div>
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="works.html">Works</a>
-      <a class="active" href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">Studio Yam</span>
+        <span class="brand-note">Architectural Design Studio</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="works.html">Works</a>
+        <a class="active" href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="page-intro">
-      <p class="eyebrow">About The Studio</p>
-      <h1>We design spaces that feel composed, useful, and deeply tied to place.</h1>
-    </section>
+    <main>
+      <section class="page-hero page-hero-split">
+        <div>
+          <p class="eyebrow">About Studio Yam</p>
+          <h1>We treat drawings as architecture in progress, not just presentation material.</h1>
+        </div>
+        <figure class="page-hero-figure">
+          <img src="images/01 WATERLOO HOUSE_68 Douglas Street/D03 Section.png" alt="Architectural section drawing from Waterloo House.">
+        </figure>
+      </section>
 
-    <section class="about-layout">
-      <div class="about-copy">
-        <p>
-          Studio Yam is an architectural practice focused on refined residential, interior, and community projects. We believe strong architecture comes from disciplined editing: fewer gestures, better light, and details that support everyday life.
-        </p>
-        <p>
-          Our work is collaborative from the start. We bring clients, consultants, and builders into the conversation early so design decisions remain coherent through concept, documentation, and delivery.
-        </p>
-      </div>
+      <section class="about-story">
+        <div class="about-text">
+          <p>
+            Studio Yam is a design practice focused on residential architecture, interiors, and spatial transformations that feel distinctive without becoming overstated. We work carefully with scale, circulation, daylight, and material atmosphere so that the final spaces are both memorable and easy to live in.
+          </p>
+          <p>
+            The studio’s visual language matters. Plans and sections are developed with the same attention as perspective views and public-facing imagery, because clients, councils, consultants, and builders all need different ways into the same idea. That is where clarity becomes part of the design service.
+          </p>
+          <p>
+            Our projects often begin with an existing house, a difficult site, or an inherited condition that needs to be re-read. We look for the latent order in each place, then use architecture to sharpen it.
+          </p>
+        </div>
 
-      <aside class="about-aside">
-        <h2>What guides us</h2>
-        <ul>
-          <li>Context before style</li>
-          <li>Material honesty and longevity</li>
-          <li>Clear plans and generous circulation</li>
-          <li>Careful alignment between architecture and interiors</li>
-        </ul>
-      </aside>
-    </section>
-  </main>
+        <div class="about-rail">
+          <article class="value-card">
+            <p class="card-tag">Principle One</p>
+            <h2>Context First</h2>
+            <p>Landscape, neighbouring fabric, and everyday movement patterns set the initial frame.</p>
+          </article>
+          <article class="value-card">
+            <p class="card-tag">Principle Two</p>
+            <h2>Graphic Clarity</h2>
+            <p>Strong drawings help keep the design coherent from concept stage through approvals and construction.</p>
+          </article>
+          <article class="value-card">
+            <p class="card-tag">Principle Three</p>
+            <h2>Warm Precision</h2>
+            <p>We aim for disciplined geometry without losing softness, tactility, or delight.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-gallery">
+        <figure class="about-gallery-primary">
+          <img src="images/02 HORNSBY HEIGHTS HOUSE_6 Bundanoon Pl/S02 Guest Room.png" alt="Guest room illustration for Hornsby Heights House.">
+        </figure>
+        <figure>
+          <img src="images/02 HORNSBY HEIGHTS HOUSE_6 Bundanoon Pl/PLAN.png" alt="Plan drawing for Hornsby Heights House.">
+        </figure>
+        <figure>
+          <img src="images/03 BAULKHAM HILLS_83 Hilda Rd/ELEVATION.png" alt="Elevation drawing for Baulkham Hills.">
+        </figure>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Studio Yam</p>
+      <p>Architecture that pairs calm planning with visual richness.</p>
+    </footer>
+  </div>
 </body>
 </html>
