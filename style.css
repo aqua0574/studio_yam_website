@@ -21,7 +21,7 @@ body {
   min-height: 100vh;
   color: var(--ink);
   background: var(--background);
-  font-family: Cabin, Helvetica, arial, sans-serif;
+  font-family: Arial, Helvetica, arial, sans-serif;
 }
 
 a {
