@@ -1,9 +1,7 @@
 :root {
   --background: #f5f3ee;
-  --surface: #ffffff;
   --ink: #151515;
   --muted: #5d5d5d;
-  --line: #e7c0d0;
   --accent: #4e3bf6;
   --accent-soft: #e7f0ff;
 }
@@ -46,14 +44,11 @@ a:focus {
   gap: clamp(40px, 7vw, 88px);
 }
 
-.hero {
-  max-width: 920px;
-}
-
 .studio-label {
   margin: 0 0 18px;
   display: inline-grid;
   gap: 0.08em;
+  color: var(--accent);
   font-size: clamp(84px, 18vw, 184px);
   line-height: 0.95;
   letter-spacing: 0;
@@ -90,6 +85,7 @@ h1 {
 }
 
 .hero {
+  max-width: 920px;
   display: grid;
   grid-template-columns: 1fr;
   gap: clamp(24px, 4vw, 52px);
@@ -103,7 +99,6 @@ h1 {
 .hero-image,
 .gallery-item {
   overflow: hidden;
-  background: transparent;
 }
 
 .hero-image img {
@@ -115,7 +110,6 @@ h1 {
 .content-grid {
   display: grid;
   grid-template-columns: 1.2fr 1fr;
-  background: transparent;
 }
 
 .panel {
@@ -131,10 +125,6 @@ h2 {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-}
-
-.studio-label {
-  color: var(--accent);
 }
 
 .studio-label-primary,
@@ -159,10 +149,6 @@ h2 {
 
 .panel p + p {
   margin-top: 12px;
-}
-
-.contact-panel {
-  background: transparent;
 }
 
 .image-gallery {
